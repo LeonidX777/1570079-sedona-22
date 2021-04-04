@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Леонид Харитонов](https://up.htmlacademy.ru/adaptive/22/user/1570079).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
