@@ -43,32 +43,32 @@
   </header>
 
   <main class="page-main">
-    <section>
+    <section class="feedback">
       <h2>
         Оставьте свой отзыв
       </h2>
       <p>
         Помогите нашим отелям стать лучше! Оставьте отзывы них, а также о посещенных вами достопримечательностях
       </p>
-      <form class="form  contest__form">
+      <form class="form  feedback__form">
 
         <fieldset class="form__fieldset">
           <legend class="form__legend">Представьтесь:</legend>
 
           <p class="form__p  form__p--text">
-            Имя*:
+            <label for="name-field">Имя*:</label>
             <input class="form__input  form__input--text" type="text" name="name" id="name-field" value="Петр">
           <div class="form__indicator  form__indicator--text"></div>
           <label class="form__label  form__label--text" for=""></label>
           </p>
           <p class="form__p  form__p--text">
-            Фамилия*:
+            <label for="surname-field">Фамилия*:</label>
             <input class="form__input  form__input--text" type="text" name="surname" id="surname-field" value="Иванов">
           <div class="form__indicator  form__indicator--text"></div>
           <label class="form__label  form__label--text" for=""></label>
           </p>
           <p class="form__p  form__p--text">
-            Отчество:
+            <label for="patronymic-field"></label>Отчество:</label>
             <input class="form__input  form__input--text" type="text" name="patronymic" id="patronymic-field"
               value="Александрович">
           <div class="form__indicator  form__indicator--text"></div>
@@ -79,18 +79,18 @@
           <legend class="form__legend">Контактная информация:</legend>
 
           <p class="form__p  form__p--text">
-            Контактный телефон*:
-            <input class="form__input  form__input--text" type="text" name="name" id="name-field"
+            <label for="phone-field">Контактный телефон*:</label>
+            <input class="form__input  form__input--text" type="text" name="name" id="phone-field"
               value="Введите телефон">
           <div class="form__indicator  form__indicator--text"></div>
           <label class="form__label  form__label--text" for=""></label>
           <p class="form__p  form__p--text">
-            Электронная почта*:
-            <input class="form__input  form__input--text" type="text" name="name" id="name-field"
+            <label for="mail-field">Электронная почта*:</label>
+            <input class="form__input  form__input--text" type="text" name="name" id="mail-field"
               value="Введите e-mail">
           <div class="form__indicator  form__indicator--text"></div>
           <label class="form__label  form__label--text" for=""></label>
-          <fieldset>
+          </fieldset>
 
             <fieldset>
               <legend>
@@ -163,11 +163,11 @@
               </p>
 
             </fieldset>
-      </form>
-      <button type="submit">
-        Отправить отзыв
-      </button>
-    </section>
+            <button class="form__submit" type="submit">
+              Отправить отзыв
+            </button>
+          </form>
+      </section>
   </main>
 
   <footer class="page-footer">
