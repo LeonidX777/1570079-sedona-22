@@ -1,7 +1,9 @@
 // Global
 @import "global/variables.scss";
-@import "global/global.scss";
+// mixin(global)
 @import "global/fonts.scss";
+@import "global/global.scss";
+
 
 
 // Blocks
@@ -11,6 +13,6 @@
 
 // Начните писать стили здесь
 body {
-  background-color: red;
+  background-color: plum;
   color: 333333;
 }

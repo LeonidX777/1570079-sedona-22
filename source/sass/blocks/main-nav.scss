@@ -1,0 +1,22 @@
+.main-nav {
+  color: $black;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.site-list__item {
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
