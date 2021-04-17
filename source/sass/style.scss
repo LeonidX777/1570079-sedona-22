@@ -5,7 +5,6 @@
 @import "global/global.scss";
 
 
-
 // Blocks
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
@@ -13,6 +12,137 @@
 
 // Начните писать стили здесь
 body {
-  background-color: plum;
+  background-color: $white;
   color: 333333;
+}
+
+.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.site-list__item {
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.site-list__item a {
+  color: $black;
+  text-decoration: none;
+}
+
+.reasons__list {
+  list-style: none;
+}
+
+.reasons__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.reasons__intro {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: regular;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.reasons__container {
+  background-color: $blue;
+}
+
+.reasons__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: regular;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.reasons__item--type-2 h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.reasons__item--type-2 .reasons__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: regular;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.reasons__item--type-3 {
+  background-color: $lightgrey;
+}
+
+.reasons__item--type-3 h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.reasons__item--type-3 .reasons__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: regular;
+  color: $grey;
+  text-transform: uppercase;
+  background-color: $lightgrey;
+}
+
+.contacts__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: regular;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+.search__hotel {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $blue;
+  text-decoration: none;
+}
+
+.social__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: regular;
+  color: $black;
+  text-transform: uppercase;
 }
