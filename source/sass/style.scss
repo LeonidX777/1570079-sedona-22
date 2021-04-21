@@ -1,1 +1,21 @@
+// Global
+@import "global/variables.scss";
+// mixin(global)
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+
+// Blocks
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/reasons.scss";
+@import "blocks/booking.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form.scss";
+@import "blocks/photo.scss";
+@import "blocks/player.scss";
+
+
 // Начните писать стили здесь

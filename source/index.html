@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -54,7 +55,7 @@
         </h2>
 
         <p class="reasons__title">
-          Седона — поиск гостинец в небольшом городке «Седона»
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p class="reasons__intro">
           Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -71,12 +72,6 @@
               </p>
             </div>
             <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
-          </li>
-          <li class="reasons__item  reasons__item--type-2">
-            <h3 class="reasons__title"> Жилье</h3>
-            <p class="reasons__description">
-              Рекомендуем пожить в настящем мотеле, все как в кино!
-            </p>
           </li>
           <li class="reasons__item  reasons__item--type-2">
             <h3 class="reasons__title">
@@ -140,53 +135,60 @@
         </ul>
       </div>
     </section>
+
+    <section class="booking">
+      <h2 class="visually-hidden">Бронирование гостиниц</h2>
+
+      <div class="booking__wrapper">
+        <div class="booking__contacts contacts">
+          <b class="contacts__title">
+            Заинтересовались?
+          </b>
+          <p class="contacts__text">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </div>
+        <a class="search__hotel" href="#">
+          Найти гостиницу
+        </a>
+        <img src="img/map.jpg" width="320" height="350" alt="Карта">
+      </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <b class="contacts__title">
-          Заинтересовались?
+      <div class="page-footer__social social">
+        <b class="social__title">
+          #VisitSedona
         </b>
-        <p class="contacts__text">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
+              Мы в Твиттере
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
+              Мы в Ютубе
+            </a>
+          </li>
+        </ul>
       </div>
-      <a class="search__hotel" href="#">
-        Найти гостиницу
-      </a>
-      <img src="img/map.jpg" width="320" height="350" alt="Карта">
-    </div>
-    </div>
-    <div class="page-footer__social social">
-      <b class="social__title">
-        #VisitSedona
-      </b>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">
-            Мы в Твиттере
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-            Мы в Фейсбуке
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
-            Мы в Ютубе
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">
-        Разработано
-      </b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
-    </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">
+          Разработано
+        </b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+      </div>
     </div>
   </footer>
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
