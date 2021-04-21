@@ -16,3 +16,7 @@
 .site-list__item--active a:active {
   color: $brown;
 }
+
+.site-list__item--active a:hover {
+  color: lightbrown;
+}
