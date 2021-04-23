@@ -13,10 +13,15 @@
   text-decoration: none;
 }
 
+.site-list__item a:hover {
+  color: $blue;
+  text-decoration: none;
+}
+
 .site-list__item--active a:active {
   color: $brown;
 }
 
 .site-list__item--active a:hover {
-  color: lightbrown;
+  color: $lightbrown;
 }
