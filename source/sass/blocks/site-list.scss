@@ -1,27 +1,44 @@
+.site-list {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 723px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 1105px;
+  }
+}
+
 .site-list__item {
   list-style: none;
+  font-weight: bold;
   text-decoration: none;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
-.site-list__item a {
+.site-list__item-link {
+  text-decoration: none;
   color: $black;
-  text-decoration: none;
 }
 
-.site-list__item a:hover {
+.site-list__item-link:hover {
+  text-decoration: none;
   color: $blue;
-  text-decoration: none;
 }
 
-.site-list__item--active a:active {
+.site-list__item--active .site-list__item-link:active {
   color: $brown;
 }
 
-.site-list__item--active a:hover {
+.site-list__item--active .site-list__item-link:hover {
   color: $lightbrown;
 }

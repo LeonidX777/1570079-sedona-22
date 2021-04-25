@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -17,23 +18,23 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__item-link" href="index.html">
               Главная
             </a>
           </li>
           <li class=" site-list__item">
-            <a href="photo.html">
+            <a class="site-list__item-link" href="catalog.html">
               Фото и видео
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__item-link">
               Форма отзыва
             </a>
           </li>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a class="site-list__item-link" href="#">
               HTML Academy
             </a>
           </li>
@@ -44,10 +45,10 @@
 
   <main class="page-main">
     <section class="feedback">
-      <h2>
+      <h2 class="feedback__title">
         Оставьте свой отзыв
       </h2>
-      <p>
+      <p class="feedback__paragraph">
         Помогите нашим отелям стать лучше! Оставьте отзывы них, а также о посещенных вами достопримечательностях
       </p>
       <form class="form  feedback__form">
@@ -97,19 +98,19 @@
                 Ваше общее впечатление:
               </legend>
 
-              <p>
+              <p class="impression__paragraph">
                 <label for=""></label>
                 <input type="radio" checked>
                 Скорее положительное
               <div></div>
               </p>
-              <p>
+              <p class="impression__paragraph">
                 <label for=""></label>
                 <input type="radio">
                 Скорее отрицательное
               <div></div>
               </p>
-              <p>
+              <p class="impression__paragraph">
                 <label for=""></label>
                 <input type="radio">
                 Затрудняюсь ответить
@@ -123,25 +124,25 @@
                 Посещенные достопримечательности:
               </legend>
 
-              <p>
+              <p class="attractions__paragraph">
                 <label for=""></label>
                 <input type="checkbox" checked>
                 Мост Дьявола
               <div></div>
               </p>
-              <p>
+              <p class="attractions__paragraph">
                 <label for=""></label>
                 <input type="checkbox" checked>
                 Гора-Колокол
               <div></div>
               </p>
-              <p>
+              <p class="attractions__paragraph">
                 <label for=""></label>
                 <input type="checkbox" checked>
                 Слайд-парк
               <div></div>
               </p>
-              <p>
+              <p class="attractions__paragraph">
                 <label for=""></label>
                 <input type="checkbox">
                 Красные скалы
@@ -155,7 +156,7 @@
                 Опишите свои эмоции:
               </legend>
 
-              <p>
+              <p class="emotion__paragraph">
                 <label for=""></label>
                 <textarea name="comment" id="comment-field" rows="10">
               Опишите подробно все свои восторги

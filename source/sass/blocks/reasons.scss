@@ -3,17 +3,17 @@
 }
 
 .reasons__title {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $white;
   text-transform: uppercase;
 }
 
 .reasons__intro {
+  font-weight: regular;
   font-size: 18px;
   line-height: 26px;
-  font-weight: regular;
   color: $grey;
   text-transform: uppercase;
 }
@@ -22,46 +22,72 @@
   background-color: $blue;
 }
 
+.reasons__item--type-1 {
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 960px;
+  }
+}
+
+.reasons__item--type-2 {
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+  }
+}
+
+.reasons__item--type-3 {
+  background-color: $lightgrey;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+  }
+}
+
 .reasons__description {
+  font-weight: regular;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
   color: $white;
   text-transform: uppercase;
 }
 
-.reasons__item--type-2 h3 {
+.reasons__item--type-2 .reasons__title {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
 .reasons__item--type-2 .reasons__description {
+  font-weight: regular;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
   color: $grey;
   text-transform: uppercase;
 }
 
-.reasons__item--type-3 {
-  background-color: $lightgrey;
-}
 
-.reasons__item--type-3 h3 {
+.reasons__item--type-3 .reasons__title {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
 .reasons__item--type-3 .reasons__description {
+  font-weight: regular;
   font-size: 14px;
   line-height: 21px;
-  font-weight: regular;
   color: $grey;
   text-transform: uppercase;
   background-color: $lightgrey;

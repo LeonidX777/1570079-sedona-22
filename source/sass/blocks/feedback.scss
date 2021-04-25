@@ -1,15 +1,15 @@
-.feedback h2 {
+.feedback__title {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
-.feedback p {
+.feedback__paragraph {
+  font-weight: regular;
   font-size: 14px;
   line-height: 24px;
-  font-weight: regular;
   color: $grey;
   text-transform: uppercase;
 }

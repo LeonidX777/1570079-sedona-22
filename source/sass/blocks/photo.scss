@@ -1,30 +1,30 @@
 .photo__title {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
 .photo__intro {
+  font-weight: regular;
   font-size: 14px;
   line-height: 24px;
-  font-weight: regular;
   color: $grey;
   text-transform: uppercase;
 }
 
 .photo-card__title {
+  font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  font-weight: bold;
   color: $black;
   text-transform: uppercase;
 }
 
-.photo-card__title p {
+.photo-card__paragraph {
+  font-weight: regular;
   font-size: 14px;
   line-height: 24px;
-  font-weight: reguular;
   color: $grey;
 }
