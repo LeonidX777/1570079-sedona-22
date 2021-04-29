@@ -1,94 +1,117 @@
 .reasons__list {
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .reasons__title {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $white;
-  text-transform: uppercase;
 }
 
 .reasons__intro {
   font-weight: regular;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $grey;
-  text-transform: uppercase;
 }
 
 .reasons__container {
   background-color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reasons__item--type-1 {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 960px;
   }
 }
 
 .reasons__item--type-2 {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 960px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 33%;
   }
 }
 
 .reasons__item--type-3 {
   background-color: $lightgrey;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 960px;
+
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // max-width: 960px;
   }
 }
 
 .reasons__description {
   font-weight: regular;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: $white;
-  text-transform: uppercase;
 }
 
 .reasons__item--type-2 .reasons__title {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  text-transform: uppercase;
 }
 
 .reasons__item--type-2 .reasons__description {
   font-weight: regular;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: $grey;
-  text-transform: uppercase;
 }
 
 
 .reasons__item--type-3 .reasons__title {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  text-transform: uppercase;
 }
 
 .reasons__item--type-3 .reasons__description {
   font-weight: regular;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: $grey;
-  text-transform: uppercase;
+
   background-color: $lightgrey;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons-list {
+    width: 723px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .reasons-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }

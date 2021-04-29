@@ -1,21 +1,24 @@
 .page-header {
   position: relative;
+
   display: flex;
   flex-direction: column;
+
   color: $black;
+
   background-color: $white;
 }
 
 .page-header__logo {
   position: absolute;
-  left: 50%;
-  // margin: 0 auto;
+  left: 33%;
+
   height: 84px;
+
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -5px;
 
   @media (min-width: $desktop-width) {
-
     height: 96.4px;
   }
 }

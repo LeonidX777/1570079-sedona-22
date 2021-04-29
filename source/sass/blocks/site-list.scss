@@ -1,13 +1,11 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
+
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
 
-@media (min-width: $tablet-width) {
-  .site-list {
-    width: 723px;
-  }
-}
 
 @media (min-width: $desktop-width) {
   .site-list {
@@ -16,13 +14,16 @@
 }
 
 .site-list__item {
+  margin-left: auto;
+  justify-content: end;
   list-style: none;
   font-weight: bold;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
   line-height: 26px;
   color: $black;
-  text-transform: uppercase;
+  width: 20%;
 }
 
 .site-list__item-link {
@@ -41,4 +42,21 @@
 
 .site-list__item--active .site-list__item-link:hover {
   color: $lightbrown;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 723px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    left: 40%;
+  }
+
+  .site-list:nth-child(2) {
+    margin-right: 60px;
+  }
 }

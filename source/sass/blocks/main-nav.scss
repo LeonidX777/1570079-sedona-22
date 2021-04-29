@@ -1,36 +1,13 @@
 .main-nav {
   color: $black;
+
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 }
 
-.main-nav__wrapper {
-  margin: 0 auto;
-  width: 320px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    width: 723px;
-  }
-
-  .main-nav__toggle {
-
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
-}
-
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+
+  @include resetlist ();
 }

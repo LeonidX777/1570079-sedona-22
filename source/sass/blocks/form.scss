@@ -1,17 +1,18 @@
 .form__legend {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $black;
-  text-transform: uppercase;
 }
 
 .form__p {
   font-weight: regular;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
   color: $grey;
-  text-transform: uppercase;
+
   background-color: $lightergrey;
 }
 
@@ -20,14 +21,16 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+
   background-color: $lightergrey;
 }
 
 .form__submit {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   color: $white;
-  text-transform: uppercase;
+
   background-color: $blue;
 }
