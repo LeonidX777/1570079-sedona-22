@@ -1,8 +1,17 @@
 .reasons__list {
-  list-style: none;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include resetlist ();
+}
+
+.reasons__title__main {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
 }
 
 .reasons__title {
@@ -10,7 +19,7 @@
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  color: $white;
+  color: $black;
 }
 
 .reasons__intro {
@@ -25,23 +34,53 @@
   background-color: $blue;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.reasons__item--type-1 {
-  @media (min-width: $tablet-width) {
-    margin: auto;
+@media (min-width: $tablet-width) {
+  .reasons__container {
+    display: flex;
+    width: 33%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .reasons__photo {
+    display: flex;
+    // width: 66%;
+  }
+
+  // .reasons__title {
+  //   width: 33%;
+  // }
+
+  // .reasons__description {
+  //   width: 33%;
+  // }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__container {
+    display: flex;
+    width: 33%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .reasons__photo {
+    width: 66%;
   }
 }
 
-.reasons__item--type-2 {
-  @media (min-width: $tablet-width) {
-    margin: auto;
-    justify-content: space-between;
+
+@media (min-width: $tablet-width) {
+  .reasons__item--type-1 {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
-    width: 33%;
+    flex-direction: row;
+    width: 768px;
   }
 }
 
@@ -49,11 +88,26 @@
   background-color: $lightgrey;
 
   @media (min-width: $tablet-width) {
-    margin: auto;
+    display: flex;
+    width: 33%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
 
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
     // max-width: 960px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__item--type-3 {
+
+    display: flex;
+    width: 33%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -104,14 +158,32 @@
   .reasons-list {
     width: 723px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    margin: auto;
   }
 
-  .reasons-item {
+  // .reasons-item {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   flex-direction: row;
+  // }
+}
+
+.reasons__item--type-2 {
+  @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33%;
+  }
+
+  @media (min-width: $tablet-width) {
+    .reasons__item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 768px;
+    }
   }
 }

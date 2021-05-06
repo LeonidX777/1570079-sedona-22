@@ -9,16 +9,19 @@
 </head>
 
 <body class="page__body">
-  <div class="page__wrapper">
+  <div class="page__container">
     <header class="page-header">
-      <a class="page-header__logo">
+      <div class="page-header__logo-row" >
+      <a class="page-header__logo" href="">
         <img src="img/logotype.svg" width="101.7" height="84" alt="Седона">
       </a>
+      <button class="main-nav__toggler  main-nav__toggler--open"type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggler main-nav__toggler--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__item-link">
+              <a class="site-list__item-link" href="">
                 Главная
               </a>
             </li>
@@ -39,7 +42,6 @@
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
@@ -54,7 +56,7 @@
             Преимущества
           </h2>
 
-          <p class="reasons__title">
+          <p class="reasons__title__main">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </p>
           <p class="reasons__intro">
@@ -71,7 +73,7 @@
                   Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+               <img class="reasons__photo" src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
             </li>
             <li class="reasons__item  reasons__item--type-2">
               <h3 class="reasons__title">
@@ -98,7 +100,7 @@
               </p>
             </li>
             <li class="reasons__item  reasons__item--type-1">
-              <img src="img/photo-bridge.jpg" width="520" height="260" alt="Фото моста">
+              <img class="reasons__photo" src="img/photo-bridge.jpg" width="520" height="260" alt="Фото моста">
               <div class="reasons__container">
                 <h3 class="reasons__title">
                   Там есть мост дьявола №2
@@ -146,12 +148,12 @@
             <p class="contacts__text">
               Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
           </div>
+          <div>
           <a class="search__hotel" href="#">
             Найти гостиницу
           </a>
           <img src="img/map.jpg" width="320" height="350" alt="Карта">
-        </div>
-        </div>
+          </div>
       </section>
 
     </main>
@@ -186,7 +188,6 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
           </a>
-        </div>
       </div>
     </footer>
   </div>

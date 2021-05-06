@@ -13,3 +13,10 @@
   line-height: 24px;
   color: $grey;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}

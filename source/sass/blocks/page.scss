@@ -17,11 +17,9 @@
   color: $grey;
 
   background-color: $white;
-
-  @include resetlist ();
 }
 
-.page__wrapper {
+.page__container {
   margin: 0 auto;
 
   width: 280px;
@@ -29,11 +27,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page__wrapper {
+  .page__container {
     margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
+
     width: 640px;
     padding: 0 64px;
   }
@@ -44,9 +41,31 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
-  .page__wrapper {
+  .page__container {
+    margin-left: auto;
+    margin-right: auto;
     width: 960px;
     padding: 0 120px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__social {
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    display: flex;
+    flex-direction: row;
   }
 }

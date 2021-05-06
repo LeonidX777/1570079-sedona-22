@@ -8,3 +8,14 @@
 
   background-color: $blue;
 }
+
+
+@media (min-width: $tablet-width) {
+  .search__hotel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+}

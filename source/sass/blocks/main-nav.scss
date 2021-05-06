@@ -1,13 +1,57 @@
 .main-nav {
+  order: -1;
+
+  position: relative;
   color: $black;
 
   outline: 5px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 }
 
-.main-nav__list {
-  display: flex;
-  justify-content: flex-end;
+@media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: white;
+  }
+}
 
+.main-nav__list {
   @include resetlist ();
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__toggler {
+  display: block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+
+  font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggler {
+    display: none;
+  }
+}
+
+.main-nav__toggler--close {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+
+  border: 1px solid red;
+}
+
+.main-nav__toggler--open {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+
+  border: 1px solid blue;
 }

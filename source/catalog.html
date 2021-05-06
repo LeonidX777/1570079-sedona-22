@@ -9,21 +9,23 @@
 </head>
 
 <body class="page__body">
-  <div class="page__wrapper">
+  <div class="page__container">
     <header class="page-header">
-    <a class="page-header__logo">
+      <div class="page-header__logo-row" >
+       <a class="page-header__logo" href="">
       <img src="img/logotype.svg" width="101.7" height="84" alt="Седона">
     </a>
+    <button class="main-nav__toggler  main-nav__toggler--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
+      <button class="main-nav__toggler main-nav__toggler--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item">
             <a class="site-list__item-link" href="index.html">
               Главная
             </a>
           </li>
-          <li class=" site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a class="site-list__item-link">
               Фото и видео
             </a>
@@ -56,7 +58,7 @@
       <ul class="photo__list">
         <li class="photo__item photo__item--wide">
           <article class="photo-card">
-            <img src="img/photo-1.jpg" width="280" height="280" alt="Фотография">
+            <img class="photo__item--wide" src="img/photo-1.jpg" width="280" height="280" alt="Фотография">
             <h3 class="photo-card__title">
               Неродные просторы
             </h3>
@@ -118,9 +120,6 @@
   </main>
 
   <footer class="page-footer">
-      <img src="img/map.jpg" width="320" height="350" alt="Карта">
-    </div>
-    </div>
     <div class="page-footer__social social">
       <b class="social__title">
         #VisitSedona
@@ -136,7 +135,7 @@
             Мы в Фейсбуке
           </a>
         </li>
-        <li class="socAial__item">
+        <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
             Мы в Ютубе
           </a>
@@ -150,10 +149,9 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
-    </div>
-    </div>
-  </footer>
-
+  </div>
+</footer>
+</div>
 </body>
 
 </html>

@@ -12,3 +12,10 @@
   line-height: 26px;
   color: $black;
 }
+
+.impression-field {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+

@@ -5,3 +5,9 @@
   line-height: 26px;
   color: $black;
 }
+
+.social__list {
+  @include resetlist ();
+  display: flex;
+  flex-direction: row;
+}
