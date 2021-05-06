@@ -1,79 +1,43 @@
 .form__legend {
+  font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
-  text-transform: uppercase;
 }
 
 .form__p {
+  font-weight: regular;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 26px;
-  font-weight: regular;
   color: $grey;
-  text-transform: uppercase;
+
   background-color: $lightergrey;
 }
 
 .form__input {
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
-  background-color: $lightergrey;
-}
 
-.impression {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-  text-transform: uppercase;
-}
-
-.impression p {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-}
-
-.attractions {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-  text-transform: uppercase;
-}
-
-.attractions p {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-}
-
-.emotion {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
-  text-transform: uppercase;
-}
-
-.emotion p {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-  color: $black;
   background-color: $lightergrey;
 }
 
 .form__submit {
+  font-weight: bold;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $white;
-  text-transform: uppercase;
+
   background-color: $blue;
+}
+
+@media (min-width: $tablet-width) {
+  .form__legend {
+    display: flex;
+    order: 2;
+  }
 }

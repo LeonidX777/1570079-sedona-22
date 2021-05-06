@@ -1,12 +1,12 @@
-.feedback__title {
+.contacts__title {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   color: $black;
 }
 
-.feedback__paragraph {
+.contacts__text {
   font-weight: regular;
   text-transform: uppercase;
   font-size: 14px;
@@ -14,9 +14,12 @@
   color: $grey;
 }
 
-@media (min-width: $tablet-width) {
-  .feedback {
+.booking__contacts {
+  @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
   }
 }
