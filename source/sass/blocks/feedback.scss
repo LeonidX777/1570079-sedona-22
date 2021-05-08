@@ -20,6 +20,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+//   .feedback__form:nth-child(3) {
+//     display: block;
+//     width: 100%;
+//   }
+// }
+
+@media (min-width: $tablet-width) {
+  .contacts__fieldset {
+    display: block;
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__fieldset {
+    display: flex;
   }
 }
