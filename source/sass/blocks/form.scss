@@ -35,9 +35,10 @@
   background-color: $blue;
 }
 
-@media (min-width: $tablet-width) {
-  .form__legend {
-    display: flex;
-    order: 2;
+.form__fieldset {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    margin: 0;
+    padding: 0;
   }
 }

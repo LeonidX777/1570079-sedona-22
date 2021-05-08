@@ -14,9 +14,12 @@
   color: $grey;
 }
 
+
 @media (min-width: $tablet-width) {
-  .feedback {
+  .feedback__form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }

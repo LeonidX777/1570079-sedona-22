@@ -51,6 +51,12 @@
     // width: 66%;
   }
 
+  @media (min-width: $tablet-width) {
+    .reasons__title {
+      display: inline-block;
+      text-align: center;
+    }
+  }
   // .reasons__title {
   //   width: 33%;
   // }
@@ -84,6 +90,12 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .reasons__description {
+    text-align: center;
+  }
+}
+
 .reasons__item--type-3 {
   background-color: $lightgrey;
 
@@ -100,14 +112,16 @@
   }
 }
 
+
 @media (min-width: $desktop-width) {
   .reasons__item--type-3 {
 
     display: flex;
     width: 33%;
-    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
