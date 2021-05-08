@@ -22,8 +22,7 @@
 .page__container {
   margin: 0 auto;
 
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,8 +30,7 @@
     margin: 0 auto;
 
 
-    width: 640px;
-    padding: 0 64px;
+    width: 768px;
   }
 
   .main-nav__toggle {
