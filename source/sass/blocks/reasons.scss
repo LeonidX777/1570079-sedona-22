@@ -30,14 +30,14 @@
   color: $grey;
 }
 
-.reasons__container {
+.description {
   background-color: $blue;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
-  .reasons__container {
+  .description {
     display: flex;
     width: 33%;
     flex-direction: row;
@@ -48,7 +48,7 @@
 
   .reasons__photo {
     display: flex;
-    // width: 66%;
+    width: 66%;
   }
 
   @media (min-width: $tablet-width) {
@@ -67,7 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reasons__container {
+  .description {
     display: flex;
     width: 33%;
     flex-direction: row;
@@ -87,6 +87,15 @@
     flex-wrap: nowrap;
     flex-direction: row;
     width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reasons__item--type-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 1200px;
   }
 }
 
