@@ -4,10 +4,70 @@
   font-size: 21px;
   line-height: 26px;
   color: $black;
+  text-align: center;
 }
 
 .social__list {
   @include resetlist ();
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 48px;
+}
+
+.social__item {
+  position: relative;
+  width: 46px;
+  margin-right: 6px;
+}
+
+.social__item:last-child {
+  position: relative;
+  width: 46px;
+  margin-left: px;
+}
+
+.social__item--facebook {
+  position: relative;
+  width: 47px;
+  margin-right: 6px;
+}
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $darkest-blue;
+  }
+}
+
+.social__icon {
+  fill: $white;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--twitter {
+    margin-top: 16px;
+    margin-left: 14px;
+  }
+
+  &--facebook {
+    margin-top: 13px;
+    margin-left: 19px;
+  }
+
+  &--youtube {
+    margin-top: 17px;
+    margin-left: 13px;
+  }
 }
