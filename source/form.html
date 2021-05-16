@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="page-header">
+    <header class="page-header page-header--form">
       <div class="page-header__logo-row" >
        <a class="page-header__logo" href="">
       <img src="img/logotype.svg" width="101.7" height="84" alt="Седона">
@@ -56,10 +56,10 @@
 
       <form class="form  feedback__form">
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Представьтесь:</legend>
+          <legend class="form__legend form__legend--person">Представьтесь:</legend>
           <p class="form__p  form__p--text">
             <label for="name-field">Имя*:</label>
-            <input class="form__input  form__input--text" type="text" name="name" id="name-field" value="Петр">
+            <input class="form__input  form__input--text" type="text" name="name" id="name-field" placeholder="Петр" required>
           </p>
           <p class="form__p  form__p--text">
             <label for="surname-field">Фамилия*:</label>
@@ -73,11 +73,11 @@
         </fieldset>
 
         <fieldset class="contacts__fieldset">
-          <legend class="form__legend">Контактная информация:</legend>
+          <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
 
           <p class="form__p  form__p--text">
             <label for="phone-field">Контактный телефон*:</label>
-            <input class="form__input  form__input--text" type="text" name="name" id="phone-field"
+            <input class="form__input  form__input--text form__input--name" type="text" name="name" id="phone-field"
               value="Введите телефон">
           </p>
           <p class="form__p  form__p--text">
