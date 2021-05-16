@@ -1,7 +1,21 @@
+// .copyright__text {
+//   font-weight: regular;
+//   text-transform: uppercase;
+//   font-size: 14px;
+//   line-height: 26px;
+//   color: $black;
+// }
+
 .copyright__text {
-  font-weight: regular;
-  text-transform: uppercase;
+  font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  color: $black;
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-right: 0;
+  margin-left: 96px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: calc(191% - 128px);
+  }
 }
