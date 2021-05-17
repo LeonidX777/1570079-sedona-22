@@ -1,6 +1,6 @@
 .site-list {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+  // outline: 5px solid rgba(0, 255, 0, 0.8);
+  // outline-offset: -5px;
 
   @include resetlist ();
 }
@@ -78,7 +78,7 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     width: 20%;
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
 
   .site-list__item:nth-of-type(2n) {
@@ -109,7 +109,7 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     width: 20%;
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
 
   .site-list__item:nth-of-type(2n) {

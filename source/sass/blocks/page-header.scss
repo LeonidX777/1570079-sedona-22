@@ -117,8 +117,8 @@
   width: 100px;
   height: 84px;
 
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  // outline: 5px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -5px;
 }
 
 @media (min-width: $desktop-width) {
@@ -136,8 +136,8 @@
     box-sizing: border-box;
     width: 1200px;
 
-    border: 1px solid red;
-    height: 96.4px;
+    // border: 1px solid red;
+    // height: 96.4px;
   }
 }
 
@@ -194,6 +194,40 @@
       background-size: 72% auto, 241% auto;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: calc(37.7vw + 56px);
+    margin-bottom: 0;
+    background: url("../img/text-sedona.svg") 20.4vw 19.6vw no-repeat,
+      url("../img/bg-back-tablet@1x.jpg") center -172px no-repeat;
+    background-size: 59.5% auto, 100% auto;
+    z-index: 0;
+    background-color: $blue;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/text-sedona.svg") 20.4vw 19.6vw no-repeat,
+        url("../img/bg-back-tablet@2x.jpg") 1px -172px no-repeat;
+      background-size: 59.5% auto, 100% auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 357px;
+    margin-bottom: 24px;
+    background: url("../img/text-sedona.svg") 369px 157px no-repeat,
+      url("../img/bg-back-desktop@1x.jpg") center -161px no-repeat;
+    background-size: 459px auto, 100% auto;
+    z-index: 0;
+    background-color: $blue;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/text-sedona.svg") 369px 157px no-repeat,
+        url("../img/bg-back-desktop@2x.jpg") center -161px no-repeat;
+      background-size: 459px auto, 100% auto;
+    }
+  }
 }
 
 .page-header--form::before {
@@ -205,6 +239,30 @@
     height: 28px;
     bottom: 0;
     left: -11px;
+    right: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: cover;
+    height: 7.41vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: cover;
+    height: 57px;
+    bottom: 0;
+    left: 0;
     right: 0;
     z-index: 1;
   }
