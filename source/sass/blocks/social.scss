@@ -1,99 +1,42 @@
-// .social__title {
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   font-size: 21px;
-//   line-height: 26px;
-//   color: $black;
-//   text-align: center;
-// }
-.social__title {
-  display: block;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media (max-width: $mobile-width-only) {
-    margin-top: 6px;
-    margin-bottom: 34px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 33.33%;
-    margin-left: 2px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 20px;
-    margin-left: 119px;
-  }
-}
 
 .social__list {
-  @include resetlist ();
   display: flex;
-  flex-direction: row;
+
+  @include resetlist ();
   flex-wrap: wrap;
-  justify-content: center;
-  min-height: 48px;
+  justify-content: space-between;
+  width: 151px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
-.social__item {
-  position: relative;
-  width: 46px;
-  margin-right: 6px;
-}
-
-.social__item:last-child {
-  position: relative;
-  width: 46px;
-  margin-left: px;
-}
-
-.social__item--facebook {
-  position: relative;
-  width: 47px;
-  margin-right: 6px;
-}
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background-color: $blue;
-
-  &:hover {
-    background-color: $dark-blue;
-  }
-
-  &:active {
-    background-color: $darkest-blue;
-  }
 }
 
-.social__icon {
-  fill: $white;
+.social__link:hover,
+.social__link:focus {
+  background-color: $dark-blue;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.social__link:active {
+  background-color: $darkest-blue;
+}
 
-  &--twitter {
-    margin-top: 16px;
-    margin-left: 14px;
-  }
+.social__link svg:active {
+  opacity: 0.3;
+}
 
-  &--facebook {
-    margin-top: 13px;
-    margin-left: 19px;
-  }
-
-  &--youtube {
-    margin-top: 17px;
-    margin-left: 13px;
+@media (max-width: $mobile-width-only) {
+  .social__list {
+    padding-top: 12px;
+    padding-bottom: 5px;
   }
 }
