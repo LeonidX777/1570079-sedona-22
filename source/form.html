@@ -11,42 +11,43 @@
 <body class="page__body">
   <div class="page__container">
     <header class="page-header page-header--form">
-      <div class="page-header__logo-row" >
-       <a class="page-header__logo" href="">
-      <img src="img/logotype.svg" width="101.7" height="84" alt="Седона">
-    </a>
-  <button class="main-nav__toggler main-nav__toggler--open"  type="button"><span class="visually-hidden">Открыть меню</span></button>
-</div>
-    <nav class="main-nav">
-      <button class="main-nav__toggler main-nav__toggler--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class=" site-list__item site-list__item--active">
-            <a class="site-list__item-link" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link">
-              Форма отзыва
-            </a>
-          </li>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__item-link" href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-    </nav>
+      <nav class="main-nav main-nav--nojs">
+        <div class="main-nav__row">
+         <a class="page-header__logo">
+           <svg class="logo" width="187" height="96" role="img" aria-label="логотип Седона">
+             <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
+             <use class="logo__sedona" xlink:href="img/sprite.svg#logo-sedona"></use>
+             <use class="logo__bridge" xlink:href="img/sprite.svg#logo-bridge"></use>
+             <use class="logo__clouds" xlink:href="img/sprite.svg#logo-clouds"></use>
+           </svg>
+         </a>
+       </div>
+       <button class="main-nav__toggle" type="button">
+         <span class="visually-hidden">Открыть меню</span>
+       </button>
+       <ul class="main-nav__list">
+         <li class="main-nav__item">
+           <a href="index.html">Главная</a>
+         </li>
+         <li class="main-nav__item">
+           <a href="catalog.html">Фото и видео</a>
+         </li>
+         <li></li>
+         <li class="main-nav__item main-nav__item--active">
+           <a>Форма отзыва</a>
+         </li>
+         <li class="main-nav__item">
+           <a href="#">HTML Academy</a>
+         </li>
+       </ul>
+     </nav>
   </header>
 
   <main class="page-main">
-    <section class="feedback">
+    <div class="intro intro--page-inner">
+      <img class="intro__img " src="img/text-sedona.svg" width="282" height="49" alt="Sedona">
+    </div>
+   <section class="feedback">
       <h2 class="visually-hidden">Оставить свой отзыв</h2>
       <div class="feedback__header">
         <p class="feedback__title">Оставьте свой отзыв</p>
@@ -183,6 +184,7 @@
         </svg>
       </a>
     </div>
+
   </footer>
 </div>
 <section class="modal modal-error">

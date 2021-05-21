@@ -1,52 +1,33 @@
 .booking {
+  text-transform: uppercase;
   text-align: center;
 }
 
-.contacts__title {
-  font-weight: bold;
-  text-transform: uppercase;
+.booking__header {
+  padding-top: 12px;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 28px;
+}
+
+.booking__title {
   font-size: 21px;
   line-height: 26px;
-  color: $black;
-  text-align: center;
+  font-weight: bold;
   padding-top: 21px;
   padding-bottom: 21px;
   margin: 0;
 }
 
-.contacts__text {
-  font-weight: regular;
-  text-transform: uppercase;
+.booking__intro {
   font-size: 14px;
   line-height: 24px;
   color: $grey;
-  text-align: center;
-}
-
-.booking__contacts {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .contacts__text {
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-  }
+  margin: 0;
 }
 
 .booking__map {
   height: 350px;
-  display: flex;
   margin-top: 49px;
   background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-mobile@1x.jpg");
   background-size: 27px 27px, cover;
@@ -58,7 +39,32 @@
   }
 }
 
+.booking__button {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+@media (max-width: $mobile-width-only) {
+  .booking__intro br {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .booking__header {
+    padding-top: 26px;
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-bottom: 39px;
+  }
+
+  .booking__title {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    margin: 0;
+  }
+
   .booking__map {
     margin-top: 58px;
     background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-tablet@1x.jpg");
@@ -67,9 +73,19 @@
       background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-tablet@2x.jpg");
     }
   }
+
+  .booking__button {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .booking__header {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
   .booking__map {
     margin-top: 66px;
     background-image: url("../../img/icon-map-marker.svg"), url("../../img/bg-map-desktop@1x.jpg");

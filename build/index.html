@@ -13,7 +13,8 @@
 <body class="page__body">
   <div class="page__container">
     <header class="page-header page-header--index">
-      <div class="main-nav__row">
+      <nav class="main-nav main-nav--nojs">
+       <div class="main-nav__row">
         <a class="page-header__logo">
           <svg class="logo" width="187" height="96" role="img" aria-label="логотип Седона">
             <use class="logo__frame" xlink:href="img/sprite.svg#logo-frame"></use>
@@ -46,9 +47,10 @@
 
 
     <main class="page-main">
-      <h1 class="visually-hidden">
-        Sedona - бронирование отелей в Седоне онлайн
-      </h1>
+      <h1 class="visually-hidden">Sedona — онлайн-сервис для бронирования отелей в Седоне</h1>
+      <div class="intro">
+        <img class="intro__img" src="img/text-sedona-index.svg" alt="Sedona">
+      </div>
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
@@ -70,11 +72,11 @@
               </div>
               <div class="features__item-pic">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1280px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
                   <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город Седона">
                 </picture>
@@ -100,11 +102,11 @@
               </div>
               <div class="features__item-pic">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
                   <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
                 </picture>
@@ -130,27 +132,16 @@
       </section>
 
       <section class="booking">
-        <h2 class="visually-hidden">Бронирование гостиниц</h2>
-
-          <div class="booking__contacts contacts">
-            <p class="contacts__title">
-              Заинтересовались?
-            </p>
-            <p class="contacts__text">
-              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-          </div>
-          <div>
-          <a class="search__hotel" href="#">
-            Найти гостиницу
-          </a>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="booking_map" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта">
-          </picture>
+        <h2 class="visually-hidden">Забронировать гостиницу в Седоне</h2>
+        <div class="booking__header">
+          <p class="booking__title">Заинтересовались?</p>
+          <p class="booking__intro">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <a href="search.html" class="button booking__button">Найти гостиницу</a>
+        <div class="booking__map">
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505998695!2d-111.83015811897525!3d34.85437338099741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1597664302766!5m2!1sru!2sru" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
