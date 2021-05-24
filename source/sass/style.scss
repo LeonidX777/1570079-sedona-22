@@ -12,30 +12,23 @@ $mobile-width-only: 767px;
 
 
 // Blocks
-@import "blocks/page.scss";
-@import "blocks/page-header.scss";
+@import "blocks/button.scss";
+@import "blocks/page-container.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/site-list.scss";
-@import "blocks/reasons.scss";
-@import "blocks/attractions.scss";
-@import "blocks/emotion.scss";
-@import "blocks/impression.scss";
-@import "blocks/search.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/advantages.scss";
+@import "blocks/booking.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
-@import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
+@import "blocks/intro.scss";
+@import "blocks/photo.scss";
+@import "blocks/picture-card.scss";
+@import "blocks/video.scss";
+@import "blocks/videoplayer.scss";
 @import "blocks/feedback.scss";
 @import "blocks/form.scss";
-@import "blocks/photo.scss";
-@import "blocks/player.scss";
-@import "blocks/main-page.scss";
-@import "blocks/features.scss";
-@import "blocks/logo.scss";
-@import "blocks/intro.scss";
-@import "blocks/booking.scss";
-@import "blocks/video.scss";
-@import "blocks/button.scss";
-
-
-// Начните писать стили здесь
+@import "blocks/modal.scss";
+@import "blocks/modal-wrong.scss";
+@import "blocks/modal-right.scss";

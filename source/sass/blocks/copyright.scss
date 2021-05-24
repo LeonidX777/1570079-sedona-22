@@ -1,5 +1,3 @@
-
-
 .copyright {
   display: flex;
   align-items: center;
@@ -12,9 +10,22 @@
   margin-right: 13px;
 }
 
+.copyright__link {
+  &:hover {
+    fill: $blue;
+  }
+
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .copyright {
     padding-top: 25px;
   }
 }
-

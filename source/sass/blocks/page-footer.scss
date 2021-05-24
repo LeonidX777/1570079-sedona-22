@@ -6,18 +6,13 @@
   padding-bottom: 13px;
 }
 
-.page-footer__title {
+.page-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-// .page-footer__social {
-// }
-
-// .page-footer__copyright {
-// }
 
 @media (max-width: $mobile-width-only) {
   .page-footer {
@@ -32,10 +27,9 @@
   }
 }
 
-// Pixel Perfect
 
 @media (max-width: $mobile-width-only) {
-  .page-footer__title {
+  .page-footer__hashtag {
     padding-right: 2px;
   }
 

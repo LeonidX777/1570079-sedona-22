@@ -1,16 +1,11 @@
-
 .social__list {
   display: flex;
-
-  @include resetlist ();
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 151px;
   margin: 0;
   padding-left: 0;
   list-style: none;
 }
-
 
 .social__link {
   display: flex;
