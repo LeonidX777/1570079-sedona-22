@@ -1,17 +1,4 @@
-// Global
-@import "global/variables.scss";
-@import "global/mixin.scss";
-@import "global/fonts.scss";
 @import "global/global.scss";
-
-// Viewports
-
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
-
-
-// Blocks
 @import "blocks/button.scss";
 @import "blocks/page-container.scss";
 @import "blocks/main-nav.scss";
