@@ -161,7 +161,6 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 256px 330px 256px 256px;
   }
 
   .advantages__list li:nth-child(3) {
