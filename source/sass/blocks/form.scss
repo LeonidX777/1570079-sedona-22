@@ -17,6 +17,7 @@
   padding-bottom: 24px;
 }
 
+
 .form__fieldset-title {
   font-size: 18px;
   line-height: 26px;
@@ -34,7 +35,7 @@
   padding-right: 6.25%;
 }
 
-.form__field-container {
+.form__field-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -75,11 +76,9 @@
   background-color: $white;
 }
 
-
 .form__fieldset--type-1 .form__field {
   align-items: center;
 }
-
 
 .form__fieldset--type-2 {
   padding-bottom: 28px;
@@ -369,7 +368,6 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
-
 @media (max-width: $mobile-width-only) {
   .form__fieldset--type-2 label[for="email"] {
     padding-top: 11px;
@@ -485,7 +483,7 @@ input[type="checkbox"]:checked + label::before {
     padding-bottom: 11px;
   }
 
-  .form__field-container {
+  .form__field-wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

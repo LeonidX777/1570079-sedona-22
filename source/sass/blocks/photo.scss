@@ -1,262 +1,107 @@
 .photo {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 84.5vw;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  position: relative;
+}
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-  }
+.photo__header {
+  text-transform: uppercase;
+  padding-top: 32px;
+  padding-left: 6%;
+  padding-right: 5%;
+  padding-bottom: 31px;
 }
 
 .photo__title {
-  margin: 0 auto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
+  margin: 0;
+}
+
+.photo__intro {
+  font-size: 14px;
+  line-height: 24px;
   color: $grey;
+  text-align: center;
+  padding-top: 28px;
+  margin: 0;
+}
+
+.photo__list {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
 
 
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
-    padding-left: 3px;
+@media (max-width: $mobile-width-only) {
+  .photo__header {
+    border-bottom: 1px solid #e5e5e5;
   }
 
-  @media (min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-top: 33px;
-    margin-bottom: 78px;
-    width: 57vw;
+  .photo__list {
+    flex-direction: column;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-top: 33px;
-    margin-bottom: 80px;
-    width: 440px;
+  .photo__item {
+    border-bottom: 1px solid $grey1;
   }
 }
 
-.photo__item {
-  margin: 0 auto;
-
-  @media (max-width: $mobile-width-only) {
-    position: relative;
-    border-top: 1px solid $white;
-    min-height: 414px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 320px;
-      height: 1px;
-      background: $grey1;
-    }
-
-    &:last-child::after {
-      position: absolute;
-      content: "";
-      width: 320px;
-      height: 1px;
-      background: $grey1;
-      bottom: 0;
-    }
+@media (min-width: $tablet-width) {
+  .photo__header {
+    padding-top: 63px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 78px;
   }
 
-  &--first {
-    @media (min-width: $tablet-width) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
-  }
-}
-
-.photo__image {
-  display: block;
-
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin-top: 23px;
-    margin-right: auto;
-    margin-left: auto;
+  .photo__title {
+    font-size: 30px;
+    line-height: 26px;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100vw;
-  }
-}
-
-.photo__description {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  text-transform: uppercase;
-
-
-  @media (max-width: $mobile-width-only) {
-    color: $black;
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 20px;
+  .photo__intro {
+    padding-top: 33px;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-top: 16px;
-    margin-bottom: 0;
-    margin-left: 2.5vw;
+  .photo__list {
+    flex-wrap: wrap;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 16px;
-    margin-bottom: 0;
-    margin-left: 20px;
-  }
-}
-
-.photo__author {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-
-  @media (max-width: $mobile-width-only) {
-    color: $grey;
-    margin-top: 1px;
-    margin-bottom: 13px;
-    margin-left: 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-left: 2.5vw;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
-  }
-}
-
-.photo__visitors-number {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: left;
-  position: relative;
-
-  @media (max-width: $mobile-width-only) {
-    color: $black;
-    margin-top: 13px;
-    margin-left: 58px;
-    margin-bottom: 14px;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 29px;
-
-    &--sunset {
-      margin-right: 2.6vw;
-    }
-
-    &--cactus {
-      margin-right: 3.7vw;
-    }
-
-    &--roads {
-      margin-right: 4.6vw;
-    }
-
-    &--bridge {
-      margin-right: 3.7vw;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 29px;
-
-    &--sunset {
-      margin-right: 21px;
-    }
-
-    &--cactus {
-      margin-right: 29px;
-    }
-
-    &--roads {
-      margin-right: 37px;
-    }
-
-    &--bridge {
-      margin-right: 29px;
-    }
-  }
-}
-
-.photo__icon-like {
-  position: absolute;
-
-  @media (max-width: $mobile-width-only) {
-    opacity: 0.3;
-    top: -1px;
-    left: -38px;
-  }
-
-  @media (min-width: $tablet-width) {
-    opacity: 0.3;
-    top: 0;
-    left: -4.1vw;
-  }
-
-  @media (min-width: $desktop-width) {
-    fill: $white;
-    top: 0;
-    left: -31px;
-  }
-}
-
-.photo__info-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
+  .photo__list li:first-child {
     width: 100%;
-    min-height: 80px;
-
-    &--first,
-    &--even {
-      background: $lightergrey;
-    }
-
-    &--odd {
-      background: $grey1;
-    }
   }
 
-  @media (min-width: $desktop-width) {
-    position: relative;
-    z-index: 1;
-    color: $white;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin-top: -80px;
+  .photo__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__header {
+    padding-top: 101px;
+    padding-left: 31%;
+    padding-right: 31%;
+    padding-bottom: 79px;
+  }
+
+  .photo__list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .photo__list li:first-child {
+    width: 100%;
+  }
+
+  .photo__item {
+    width: 33%;
+    flex-grow: 1;
   }
 }
